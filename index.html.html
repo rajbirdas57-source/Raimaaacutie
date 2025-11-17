@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cute Flowers Surprise</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #ffd6e9, #ffeaf5, #ffd1f7);
+    background-size: 300% 300%;
+    animation: bgMove 10s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+  }
+    margin: 0;
+    padding: 0;
+    background: #ffeaf5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+  }
+
+  .container {
+    text-align: center;
+  }
+
+  .character {
+    width: 180px;
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0% { transform: translateY(20px); opacity: 0; }
+    50% { transform: translateY(-10px); opacity: 1; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+
+  @keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  } {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0); }
+  }
+
+  .flowers {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 15px;
+  }
+
+  .flower {
+    width: 80px;
+    animation: bloom 1.5s ease forwards;
+    opacity: 0;
+  }
+
+  @keyframes bloom {
+    0% { transform: scale(0.1); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+
+  h2 {
+    color: #ff70a6;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .heart {
+    position: absolute;
+    font-size: 20px;
+    color: #ff4d88;
+    animation: rise 3s linear forwards;
+    opacity: 0.8;
+  }
+
+  @keyframes rise {
+    0% { transform: translateY(0) scale(0.8); opacity: 1; }
+    100% { transform: translateY(-200px) scale(1.2); opacity: 0; }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <!-- inline chibi SVG (embedded so images never break) -->
+    <svg class="character" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="180" height="180" aria-hidden="true">
+      <defs>
+        <linearGradient id="g1" x1="0" x2="1">
+          <stop offset="0" stop-color="#ffdede"/>
+          <stop offset="1" stop-color="#fff1f7"/>
+        </linearGradient>
+      </defs>
+      <circle cx="100" cy="90" r="58" fill="url(#g1)" stroke="#ff9ab8" stroke-width="3" />
+      <ellipse cx="80" cy="100" rx="12" ry="8" fill="#3b2f2f" opacity="0.12" />
+      <ellipse cx="120" cy="100" rx="12" ry="8" fill="#3b2f2f" opacity="0.12" />
+      <circle cx="80" cy="88" r="6" fill="#2b2b2b" />
+      <circle cx="120" cy="88" r="6" fill="#2b2b2b" />
+      <path d="M78 110 q22 14 44 0" stroke="#b85b75" stroke-width="4" fill="none" stroke-linecap="round" />
+      <rect x="60" y="125" width="80" height="38" rx="18" fill="#ffd1e6" stroke="#ff9ab8" stroke-width="3" />
+      <path d="M50 140 q20 -30 50 -20" stroke="#ff9ab8" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.6" />
+    </svg>
+    <h2>Eii nao tomr jonno phool 🌷🎀</h2>
+
+    <div class="flowers">
+      <!-- inline tulip SVG (embedded) -->
+      <svg class="flower" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="80" height="80" aria-hidden="true">
+        <g>
+          <path d="M32 6c6 0 14 6 14 14 0 10-8 20-14 20s-14-10-14-20c0-8 8-14 14-14z" fill="#ff6fa3" />
+          <path d="M22 36c4 6 10 10 10 10s6-4 10-10" stroke="#2b7a2b" stroke-width="3" fill="none" stroke-linecap="round" />
+          <rect x="30" y="42" width="4" height="20" rx="2" fill="#2b7a2b" />
+        </g>
+      </svg>
+      <!-- inline tulip SVG (embedded) -->
+      <svg class="flower" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="80" height="80" aria-hidden="true">
+        <g>
+          <path d="M32 6c6 0 14 6 14 14 0 10-8 20-14 20s-14-10-14-20c0-8 8-14 14-14z" fill="#ff6fa3" />
+          <path d="M22 36c4 6 10 10 10 10s6-4 10-10" stroke="#2b7a2b" stroke-width="3" fill="none" stroke-linecap="round" />
+          <rect x="30" y="42" width="4" height="20" rx="2" fill="#2b7a2b" />
+        </g>
+      </svg>
+      <!-- inline tulip SVG (embedded) -->
+      <svg class="flower" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="80" height="80" aria-hidden="true">
+        <g>
+          <path d="M32 6c6 0 14 6 14 14 0 10-8 20-14 20s-14-10-14-20c0-8 8-14 14-14z" fill="#ff6fa3" />
+          <path d="M22 36c4 6 10 10 10 10s6-4 10-10" stroke="#2b7a2b" stroke-width="3" fill="none" stroke-linecap="round" />
+          <rect x="30" y="42" width="4" height="20" rx="2" fill="#2b7a2b" />
+        </g>
+      </svg>
+    </div>
+
+  </div>
+  <script>
+    const container = document.querySelector('.container');
+    const flowers = document.querySelector('.flowers');
+    const character = document.querySelector('.character');
+    const title = document.querySelector('h2');
+
+    flowers.style.display = 'none';
+    title.style.display = 'none';
+
+    const tapMsg = document.createElement('h3');
+    tapMsg.innerText = 'Tap to reveal 💗';
+    tapMsg.style.color = '#ff70a6';
+    tapMsg.style.fontWeight = '500';
+    tapMsg.style.marginTop = '20px';
+    container.appendChild(tapMsg);
+
+    const audio = new Audio('data:audio/mp3;base64,//uQxAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAACAAACcQCA//////////////////////////////////////////////////////////////8AAAAA//8AALcA///+///8///////+/////wAX///9/////v///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA');
+
+    function spawnHeart() {
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.innerText = '💗';
+      heart.style.left = Math.random() * 80 + 10 + '%';
+      heart.style.bottom = '20px';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 3000);
+    }
+
+    setInterval(spawnHeart, 700);
+
+    container.addEventListener('click', () => {
+      tapMsg.remove();
+      flowers.style.display = 'flex';
+      const pop = new Audio('https://cdn.pixabay.com/audio/2022/03/15/audio_7a043db3b8.mp3');
+      pop.play();
+      title.style.display = 'block';
+      audio.load(); audio.play().catch(e => console.log(e))();
+    }, { once: true });
+  </script>
+</body>
+</html>
